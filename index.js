@@ -48,3 +48,5 @@ let weather = {
         weather.search();
       }
     });
+    
+    weather.fetchWeather("Nairobi")
