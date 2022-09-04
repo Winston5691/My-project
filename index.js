@@ -1,13 +1,17 @@
-let weather = {
-    apiKey: "77b3ded4d7f859c7f5d70489eccebfad",
-    fetchWeather: function (location) {
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locationSearch}&appid=faa70cbaae7edf4ddc280057abe67d2c`)
+.then(res => res.json())
+.then(data => {
+
+{
+    {
       fetch(
-        "https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}" +
+        "https://api.openweathermap.org/data/2.5/weather?q=${locationSearch}&appid=faa70cbaae7edf4ddc280057abe67d2c" +
           location + "&units=metric&appid=" + this.apiKey
       )
         .then((response) => {
           if (!response.ok) {
-            alert("We are still mourning Willard Herman Scott Jr, so he has no news to report!!");
+            alert("We are still mourning Willard Herman Scott Jr, so there is no news to report!!");
             throw new Error("We are still mourning Willard Herman Scott Jr, so there is no news to report!!");
           }
           return response.json();
