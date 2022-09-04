@@ -28,6 +28,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locationSearch}&appid
     icon.setAttribute('src', `https://openweathermap.org/img/wn/${ data.weather[0].icon }.png`)
  
 }).catch(data => {
-    city.innerHTML = "Error! Location Can't be Found"; 
+    city.innerHTML = "We will surely tell Bill Nelson to add that as a city in NASA database"; 
 })
 })
