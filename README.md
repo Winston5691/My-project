@@ -1,5 +1,5 @@
 My-project
-This is a weather project
+This is a weather application project
 
 Programming language: Javascript
 Markup language: HTML
